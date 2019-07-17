@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UntitledProject</string>
+    <string name="univ_hier">"대학 계급"</string>
+    <string name="my_info">내 정보</string>
+</resources>
