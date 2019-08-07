@@ -2,4 +2,20 @@
     <string name="app_name">UntitledProject</string>
     <string name="univ_hier">"대학 계급"</string>
     <string name="my_info">내 정보</string>
+    <string-array name="majorType">
+        <item name="select">선택</item>
+        <item name="natural">4년제 자연</item>
+        <item name="humanities">4년제 인문</item>
+        <item name="art">4년제 예체능</item>
+        <item name="college">전문대</item>
+        <item name="noUniv">고졸</item>
+        <item name="etc">기타</item>
+    </string-array>
+    <string-array name="interests">
+        <item name="master">대학원 진학</item>
+        <item name="abroad">유학</item>
+        <item name="jobS">취업(사기업)</item>
+        <item name="jobG">취업(공기업)</item>
+        <item name="GMW">공무원</item>
+    </string-array>
 </resources>
