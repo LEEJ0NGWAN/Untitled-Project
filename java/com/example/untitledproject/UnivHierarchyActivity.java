@@ -16,8 +16,8 @@ public class UnivHierarchyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_univhierarchy);
-        checkButton  = (Button)findViewById(R.id.checkButton);
-        inputUnivText = (EditText)findViewById(R.id.inputUnivText);
+        checkButton  = findViewById(R.id.checkButton);
+        inputUnivText = findViewById(R.id.inputUnivText);
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

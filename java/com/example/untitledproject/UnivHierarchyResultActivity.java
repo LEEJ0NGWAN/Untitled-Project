@@ -15,10 +15,10 @@ public class UnivHierarchyResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_univhierarchyresult);
-        hierarchyName = (TextView) findViewById(R.id.hierarchyName);
-        hierarchyTier = (TextView) findViewById(R.id.hierarchyTier);
-        hierarchyDetail = (TextView) findViewById(R.id.hierarchyDetail);
-        buttonReturn = (Button) findViewById(R.id.buttonReturn);
+        hierarchyName = findViewById(R.id.hierarchyName);
+        hierarchyTier = findViewById(R.id.hierarchyTier);
+        hierarchyDetail = findViewById(R.id.hierarchyDetail);
+        buttonReturn = findViewById(R.id.buttonReturn);
         Intent intentFromInputActivity = getIntent();
         univName = intentFromInputActivity.getExtras().getString("univName");
         univName.trim();
