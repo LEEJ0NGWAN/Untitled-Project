@@ -100,6 +100,13 @@ public class SetInfo extends AsyncTask {
                 msg = "메일 주소가 일치하지 않는군요";
                 btnText = "젠장";
                 break;
+            case "1062":
+                title = "맙소사!";
+                msg = "이 짧은 찰나의 순간에 누군가가 먼저 닉네임을 가로챘습니다! " +
+                        "아쉽지만 뒤로 가셔서 다른 닉네임을 설정해주세요..." +
+                        "죄송합니다!";
+                btnText = "젠장";
+                break;
             default:
                 title = "오류";
                 msg = "에러코드 : " + data;

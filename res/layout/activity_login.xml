@@ -15,10 +15,10 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
         android:text="안녕하세요!"
-        android:textSize="36sp"
+        android:textSize="30sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/emailText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,45 +30,48 @@
         android:id="@+id/emailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="메일주소@abc.com"
         android:inputType="textEmailAddress"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/loginButton" />
+        app:layout_constraintBottom_toTopOf="@+id/pwText"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.example.untitledproject.ClearEditText
         android:id="@+id/pwText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="48dp"
         android:ems="10"
         android:hint="비밀번호"
         android:inputType="textPassword"
         android:nextFocusDown="@id/loginButton"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="@+id/emailText"
-        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+        app:layout_constraintBottom_toTopOf="@+id/forgotButton"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="80dp"
         android:background="@android:color/transparent"
         android:foreground="@android:drawable/ic_menu_send"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/forgotButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintStart_toEndOf="@+id/emailText" />
 
     <Button
         android:id="@+id/newButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="86dp"
+        android:layout_marginBottom="48dp"
         android:background="@android:color/transparent"
         android:text="  처음이신가요?  "
         android:textSize="30sp"
@@ -82,7 +85,7 @@
         android:id="@+id/forgotButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="48dp"
         android:background="@android:color/transparent"
         android:text="  잊으셨나요?  "
         android:textSize="30sp"
@@ -96,14 +99,16 @@
         android:id="@+id/turnOnLoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="48dp"
         android:background="@android:color/transparent"
         android:foreground="@android:drawable/gallery_thumb"
         android:text="  로그인  "
         android:textSize="30sp"
         android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/forgotButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/pwText" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

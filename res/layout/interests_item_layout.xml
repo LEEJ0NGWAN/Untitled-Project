@@ -10,5 +10,5 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="interestName"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 </LinearLayout>

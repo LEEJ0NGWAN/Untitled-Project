@@ -10,9 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static android.support.v7.widget.RecyclerView.Adapter;
-
-public class InterestsAdapter extends Adapter<InterestsAdapter.ViewHolder>{
+public class InterestsAdapter extends RecyclerView.Adapter<InterestsAdapter.ViewHolder>{
     FirstLoginActivity firstLoginActivity;
     private ArrayList mData = null ;
     public class ViewHolder extends RecyclerView.ViewHolder {

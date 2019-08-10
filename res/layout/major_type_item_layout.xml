@@ -8,4 +8,4 @@
     android:gravity="center_horizontal"
     android:singleLine="true"
     android:text="Yee"
-    android:textSize="30sp" />
+    android:textSize="18sp" />

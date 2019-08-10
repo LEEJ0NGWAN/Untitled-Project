@@ -13,10 +13,11 @@
         android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="77dp"
         android:text="반갑습니다!"
-        android:textSize="36sp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailPut"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,48 +25,45 @@
         android:id="@+id/emailPut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="237dp"
-        android:ems="15"
+        android:layout_marginBottom="32dp"
         android:hint="메일주소@abc.com"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pwPut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.example.untitledproject.ClearEditText
         android:id="@+id/pwPut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:ems="15"
-        android:hint="비밀번호 (8~20자리) 영어,숫자,특수문자"
+        android:layout_marginBottom="32dp"
+        android:hint="비밀번호 (8~20자리)"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pwPut2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailPut" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.example.untitledproject.ClearEditText
         android:id="@+id/pwPut2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:ems="15"
-        android:hint="비밀번호를 한번 더 확인해주세요"
+        android:layout_marginBottom="96dp"
+        android:hint="한번 더 확인해주세요"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/joinButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pwPut" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/joinButton"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="131dp"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
         android:background="@android:color/transparent"
-        android:foreground="@android:drawable/ic_menu_compass"
+        android:foreground="@drawable/ic_exit_to_app_black_24dp"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -170,6 +170,7 @@ public class FirstLoginActivity extends AppCompatActivity {
     }
     public void nameStage() {
         clearStage();
+        changingEditText.setText(null);
         changingEditText.setVisibility(View.VISIBLE);
         firstLoginButton.setVisibility(View.VISIBLE);
         changingText.setText("별명을 설정해주세요!");
