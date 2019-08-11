@@ -25,49 +25,49 @@
         android:id="@+id/emailPut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
         android:hint="메일주소@abc.com"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/pwPut"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.example.untitledproject.ClearEditText
         android:id="@+id/pwPut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
         android:hint="비밀번호 (8~20자리)"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/pwPut2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailPut" />
 
     <com.example.untitledproject.ClearEditText
         android:id="@+id/pwPut2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
+        android:layout_marginTop="16dp"
         android:hint="한번 더 확인해주세요"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/joinButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwPut" />
 
     <Button
         android:id="@+id/joinButton"
         android:layout_width="@android:dimen/app_icon_size"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
         android:background="@android:color/transparent"
         android:foreground="@drawable/ic_exit_to_app_black_24dp"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwPut2" />
 
 </android.support.constraint.ConstraintLayout>
