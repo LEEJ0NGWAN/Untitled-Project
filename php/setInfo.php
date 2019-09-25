@@ -42,5 +42,6 @@
 		}
 		else
 			echo mysqli_errno($connect);
+		echo "\r\n";
 	}
 ?>
